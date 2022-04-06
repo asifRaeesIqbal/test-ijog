@@ -36,9 +36,9 @@ Content type : Json, Payload Example:
 {"url":"http://somewhere/notify","frequency":20}
 
 
-DELETE - Remove  
+DELETE - Remove  (this requires a 'url' request paramater added to the endpoint as below to work)
 
-example:
+Example:
 
 http://localhost:8091/clock/notification?url=http://somewhere/notify
 
