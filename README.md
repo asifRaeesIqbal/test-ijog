@@ -60,13 +60,12 @@ Now monitor the logs..
 
 ## Framework Info:
 
-Currently Spring boot can handle simultaneously requests, however tomcat under the hood has a limitation, it can only handle 200 simultaneous requests.
-If I want more than this, I would need to look at performance upping the thread count or and as such something 
+Spring boot can handle simultaneously requests, having said that it all depends on tomcat under the hood, which has a limitation, it can only handle 200 simultaneous requests only. If I want more than this was required, I would need to look at increasing the thread count or using something more performant 
 like spring webflux which a lot quicker. 
 
 Another option of really determining the throughput would be to set up jmeter and see how the application performs under load. 
 I am using Concurrent hashmap as a store, which is more suited to concurrent access due its finer grained locking should also help.
-Again im assuming this should be enough, and without knowing a benchmark, and testing more.
+Again im assuming this should be enough, and without knowing a benchmark, and testing more - i have gone as far as i can.
 
 ## Areas left to work on:
 
@@ -74,6 +73,6 @@ Again im assuming this should be enough, and without knowing a benchmark, and te
 * Tests: many classes dont have enough tests.
 * URL Validation: Started this but this needed further looking into.
 * Introduction of Webflux in spring to help speed it up.
-* Look into other frameworks like vert.x which follows the single threaded reactor model which is even more performant than spring. (this would require more thana couple of hours)
+* Look into other frameworks like vert.x which follows the single threaded reactor model which is even more performant than spring. (this would require more than a couple of hours)
 
 
