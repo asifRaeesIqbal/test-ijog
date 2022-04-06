@@ -17,7 +17,7 @@ The application should be available on localhost port 8091  (set in properties)
 
 ## Usage, Endpoint:
 
-Application endpoint would be:
+Application endpoint is this single one:
 
 http://localhost:8091/clock/notification
 
@@ -25,15 +25,19 @@ Payload takes a string url and a frequency specified in seconds ONLY, minimum 5 
 
 POST - Create
 
-Content type : Json, Payload Example:
+Endpoint: http://localhost:8091/clock/notification
 
-{"url":"http://somewhere/notify","frequency":10}
+Content type : Json
+
+Payload Example:  {"url":"http://somewhere/notify","frequency":10}
 
 PUT - Update
 
-Content type : Json, Payload Example:
+Endpoint: http://localhost:8091/clock/notification
 
-{"url":"http://somewhere/notify","frequency":20}
+Content type : Json
+
+Payload Example:  {"url":"http://somewhere/notify","frequency":20}
 
 
 DELETE - Remove  (this requires a 'url' request paramater added to the endpoint as below to work)
