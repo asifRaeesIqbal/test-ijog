@@ -33,7 +33,7 @@ PUT - Update
 
 Content type : Json, Payload Example:
 
-{"url":"http://somewhere/notify","frequency":10}
+{"url":"http://somewhere/notify","frequency":20}
 
 
 DELETE - Remove  
