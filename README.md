@@ -67,7 +67,7 @@ Another option of really determining the throughput would be to set up jmeter an
 I am using Concurrent hashmap as a store, which is more suited to concurrent access due its finer grained locking should also help.
 Again im assuming this should be enough, and without knowing a benchmark, and testing more - i have gone as far as i can.
 
-## Areas left to work on:
+## Areas left to work on/explore:
 
 * Swagger: This would give excellent information ont he API and would be a nice to have,
 * Tests: many classes dont have enough tests.
