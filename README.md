@@ -23,7 +23,7 @@ http://localhost:8091/clock/notification
 
 Payload takes a string url and a frequency specified in seconds ONLY, minimum 5 seconds, and maximum 14400 seconds (4 hours)
 
-POST - Create
+1. POST - Create
 
 Endpoint: http://localhost:8091/clock/notification
 
@@ -31,7 +31,7 @@ Content type : Json
 
 Payload Example:  {"url":"http://somewhere/notify","frequency":10}
 
-PUT - Update
+2. PUT - Update
 
 Endpoint: http://localhost:8091/clock/notification
 
@@ -40,7 +40,7 @@ Content type : Json
 Payload Example:  {"url":"http://somewhere/notify","frequency":20}
 
 
-DELETE - Remove  (this requires a 'url' request paramater added to the endpoint as below to work)
+3. DELETE - Remove  (this requires a 'url' request paramater added to the endpoint as below to work)
 
 Example:
 
